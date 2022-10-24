@@ -1,0 +1,50 @@
+# ===============================================================================
+# =                                                                             =
+# =                               KORUTHOS-PACKAGE                              =
+# =                                                                             =
+# ===============================================================================
+# -------------------------------------------------------------------------------
+# - Author:     Chauã Queirolo                                                  -
+# - Date:       24/oct/2022                                                     -
+# ------------------------------------------------------------------------------- 
+
+[build-system]
+requires        = ['hatchling']
+build-backend   = 'hatchling.build'
+
+[project]
+name            = 'koruthos'
+version         = '0.0.0'
+authors         = [{ name='Chauã Queirolo', email='chaua@koruthos.com.br'},]
+description     = 'Some general purpose utility classes and functions'
+readme          = 'README.md'
+requires-python = '>=3.8'
+license         = 'MIT'
+
+keywords = []
+
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Topic :: Utilities',
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = []
+docs = []
+test = []
+
+#[project.urls]
+#Homepage = ''
+#Documentation = ''
+
+[tool.hatch.build]
+sources = ['src']
+include = ['koruthos*']
+exclude = []
+
